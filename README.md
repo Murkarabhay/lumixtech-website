@@ -1,18 +1,37 @@
-# Lumix Tech Website
+# Lumix Tech — Qodex Website
 
-A responsive single-page landing website for Lumix Tech.
+Premium static website for Lumix Tech and Qodex, prepared for GitHub Pages and responsive use on desktop, tablet and mobile.
 
-## Files
-- `index.html` — page structure and content
-- `style.css` — responsive visual design
-- `script.js` — mobile menu, scroll reveal, active navigation
-- `assets/lumix-logo.png` — Lumix Tech logo
+## Pages
+- `index.html` — Lumix Tech homepage
+- `qodex.html` — Qodex product page
+- `qodex-privacy.html` — Qodex Privacy Policy
+- `qodex-support.html` — Qodex Help & Support
 
-## Run locally
-Open `index.html` in a browser.
+## Project structure
+```text
+.
+├── index.html
+├── qodex.html
+├── qodex-privacy.html
+├── qodex-support.html
+├── style.css
+├── script.js
+├── assets/
+└── README.md
+```
 
 ## GitHub Pages
-Upload the contents of this folder to your GitHub repository and enable GitHub Pages from:
-Settings → Pages → Deploy from a branch → main → /(root).
+1. Create a GitHub repository (for example, `lumixtech-website`).
+2. Upload all files and folders from this project root.
+3. In **Settings → Pages**, select **Deploy from a branch**.
+4. Choose the `main` branch and `/ (root)`, then save.
+5. GitHub Pages will publish the site; all page and asset links are relative, so they work from a project repository path as well as a custom domain.
 
-Then connect `lumixtech.in` through GoDaddy DNS after GitHub Pages is live.
+## Local preview
+Run `python -m http.server 5500` from the project root and open `http://localhost:5500/`.
+
+## Notes
+- No build step or framework is required.
+- The design includes a mobile navigation menu and responsive layouts.
+- Contact/support email: `support@lumixtech.in`.
